@@ -1,0 +1,29 @@
+= Vpoint
+
+This codebase contains a set of examples for the usage of verx & vertx-web libraries with RxJava 2 support.
+
+There are currently 3 Verticles:
+
+1. `PongVerticle` (default port `8080`): Simple Ping-Pong http service that replies with plaintext "Pong!" to any request
+2. `RollVerticle` (default port `8081`): An http service to roll dice - it has 1 GET endpoint that accepts number of dice and their number of sides,
+such as 1d10 or 3d5 and responds with an array of resulting roll values
+3. `MainVerticle`: to compose the two mentioned above
+
+There's also a launcher that creates a clustered deployment using Hazelcast Cluster manager
+
+== Building
+
+To launch your tests:
+```
+./gradlew clean test
+```
+
+To package your application:
+```
+./gradlew clean assemble
+```
+
+To run your application:
+```
+./gradlew clean run
+```
