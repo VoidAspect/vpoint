@@ -1,6 +1,6 @@
 = Vpoint
 
-This codebase contains a set of examples for the usage of verx & vertx-web libraries with RxJava 2 support.
+This codebase contains a set of examples for the usage of vertx & vertx-web libraries with RxJava 2 support.
 
 There are currently 3 Verticles:
 
